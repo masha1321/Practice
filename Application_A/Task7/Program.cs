@@ -15,7 +15,7 @@
                 }
                 catch
                 {
-                    Console.WriteLine($"Cannot calculate for a = {a}");
+                    Console.WriteLine($"Невозможно рассчитать для a = {a}");
                 }
             }
         }
