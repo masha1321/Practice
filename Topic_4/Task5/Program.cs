@@ -1,16 +1,24 @@
-﻿namespace Task5
+﻿namespace task5
 {
+
     internal class Program
     {
         static void Main()
         {
-            byte x = 200; byte y = 200;
+            byte n = 1; byte i;
             try
             {
-                byte result = (byte)(x + y);
-                Console.WriteLine("1: {0}", result);
-                result = checked((byte)(x + y));
-                Console.WriteLine("2:", result);
+                checked
+                {
+                    for (i = 1; i < 10; i++) n *= i;
+                    Console.WriteLine("1: {0}", n);
+                }
+                unchecked
+                {
+                    n = 1;
+                    for (i = 1; i < 10; i++) n *= i;
+                    Console.WriteLine("2: {0}", n);
+                }
             }
             catch (OverflowException)
             {
@@ -19,6 +27,3 @@
         }
     }
 }
-
-
-
