@@ -2,22 +2,18 @@
 {
     class Program
     {
-        // Определение делегата
         delegate string StringDelegate(string s);
-
-        // Метод 1: Преобразование строки в верхний регистр
         static string ToUpper(string s)
         {
             return s.ToUpper();
         }
 
-        // Метод 2: Преобразование строки в нижний регистр
-        static string ToLower(string s)
+          static string ToLower(string s)
         {
             return s.ToLower();
         }
 
-        // Метод 3: Обращение строки
+        
         static string Reverse(string s)
         {
             char[] arr = s.ToCharArray();
@@ -27,16 +23,15 @@
 
         static void Main(string[] args)
         {
-            // Создание экземпляра делегата
+            
             StringDelegate myDelegate = ToUpper;
-            Console.WriteLine(myDelegate("Hello, World!"));  // Вывод: "HELLO, WORLD!"
+            Console.WriteLine(myDelegate("Hello, World!"));  
 
-            // Добавление методов в цепочку вызовов
             myDelegate += ToLower;
-            Console.WriteLine(myDelegate("Hello, World!"));  // Вывод: "hello, world!"
+            Console.WriteLine(myDelegate("Hello, World!"));  
 
             myDelegate += Reverse;
-            Console.WriteLine(myDelegate("Hello, World!"));  // Вывод: "!dlroW ,olleH"
+            Console.WriteLine(myDelegate("Hello, World!"));  
         }
     }
 }
