@@ -28,7 +28,5 @@ class Program
         
         Task.WhenAll(tasks).Wait();
 
-        // Для ожидания завершения хотя бы одной задачи вы можете использовать:
-        // int taskIndex = Task.WaitAny(tasks);
     }
 }
