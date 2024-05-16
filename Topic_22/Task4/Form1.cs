@@ -130,5 +130,10 @@ namespace Task4
         {
             Application.Exit();
         }
+
+        private void CVtextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

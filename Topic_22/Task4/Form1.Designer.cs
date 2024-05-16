@@ -150,7 +150,7 @@
             FemaleRadioButton.AutoSize = true;
             FemaleRadioButton.Location = new Point(15, 57);
             FemaleRadioButton.Name = "FemaleRadioButton";
-            FemaleRadioButton.Size = new Size(89, 24);
+            FemaleRadioButton.Size = new Size(92, 24);
             FemaleRadioButton.TabIndex = 1;
             FemaleRadioButton.TabStop = true;
             FemaleRadioButton.Text = "Женский";
@@ -161,7 +161,7 @@
             MaleRadioButton.AutoSize = true;
             MaleRadioButton.Location = new Point(15, 27);
             MaleRadioButton.Name = "MaleRadioButton";
-            MaleRadioButton.Size = new Size(90, 24);
+            MaleRadioButton.Size = new Size(93, 24);
             MaleRadioButton.TabIndex = 0;
             MaleRadioButton.TabStop = true;
             MaleRadioButton.Text = "Мужской";
@@ -262,7 +262,7 @@
             From5To9RB.AutoSize = true;
             From5To9RB.Location = new Point(298, 66);
             From5To9RB.Name = "From5To9RB";
-            From5To9RB.Size = new Size(115, 24);
+            From5To9RB.Size = new Size(118, 24);
             From5To9RB.TabIndex = 4;
             From5To9RB.TabStop = true;
             From5To9RB.Text = "От 5 до 9 лет";
@@ -273,7 +273,7 @@
             LessThen1RB.AutoSize = true;
             LessThen1RB.Location = new Point(22, 66);
             LessThen1RB.Name = "LessThen1RB";
-            LessThen1RB.Size = new Size(132, 24);
+            LessThen1RB.Size = new Size(135, 24);
             LessThen1RB.TabIndex = 3;
             LessThen1RB.TabStop = true;
             LessThen1RB.Text = "Меньше 1 года";
@@ -284,7 +284,7 @@
             MoreThen10RB.AutoSize = true;
             MoreThen10RB.Location = new Point(561, 26);
             MoreThen10RB.Name = "MoreThen10RB";
-            MoreThen10RB.Size = new Size(149, 24);
+            MoreThen10RB.Size = new Size(152, 24);
             MoreThen10RB.TabIndex = 2;
             MoreThen10RB.TabStop = true;
             MoreThen10RB.Text = "От 10 лет и более";
@@ -295,7 +295,7 @@
             From1To5RB.AutoSize = true;
             From1To5RB.Location = new Point(298, 26);
             From1To5RB.Name = "From1To5RB";
-            From1To5RB.Size = new Size(150, 24);
+            From1To5RB.Size = new Size(153, 24);
             From1To5RB.TabIndex = 1;
             From1To5RB.TabStop = true;
             From1To5RB.Text = "От 1 года до 5 лет";
@@ -306,7 +306,7 @@
             NoWorkRB.AutoSize = true;
             NoWorkRB.Location = new Point(22, 26);
             NoWorkRB.Name = "NoWorkRB";
-            NoWorkRB.Size = new Size(164, 24);
+            NoWorkRB.Size = new Size(167, 24);
             NoWorkRB.TabIndex = 0;
             NoWorkRB.TabStop = true;
             NoWorkRB.Text = "Прежде не работал";
@@ -333,7 +333,7 @@
             categoryD.AutoSize = true;
             categoryD.Location = new Point(161, 115);
             categoryD.Name = "categoryD";
-            categoryD.Size = new Size(39, 24);
+            categoryD.Size = new Size(42, 24);
             categoryD.TabIndex = 6;
             categoryD.Text = "D";
             categoryD.UseVisualStyleBackColor = true;
@@ -343,7 +343,7 @@
             categoryC.AutoSize = true;
             categoryC.Location = new Point(110, 115);
             categoryC.Name = "categoryC";
-            categoryC.Size = new Size(37, 24);
+            categoryC.Size = new Size(40, 24);
             categoryC.TabIndex = 5;
             categoryC.Text = "C";
             categoryC.UseVisualStyleBackColor = true;
@@ -353,7 +353,7 @@
             categoryB.AutoSize = true;
             categoryB.Location = new Point(66, 115);
             categoryB.Name = "categoryB";
-            categoryB.Size = new Size(37, 24);
+            categoryB.Size = new Size(40, 24);
             categoryB.TabIndex = 4;
             categoryB.Text = "B";
             categoryB.UseVisualStyleBackColor = true;
@@ -363,7 +363,7 @@
             categoryA.AutoSize = true;
             categoryA.Location = new Point(22, 115);
             categoryA.Name = "categoryA";
-            categoryA.Size = new Size(38, 24);
+            categoryA.Size = new Size(41, 24);
             categoryA.TabIndex = 3;
             categoryA.Text = "A";
             categoryA.UseVisualStyleBackColor = true;
@@ -382,7 +382,7 @@
             driveLicense.AutoSize = true;
             driveLicense.Location = new Point(13, 56);
             driveLicense.Name = "driveLicense";
-            driveLicense.Size = new Size(233, 24);
+            driveLicense.Size = new Size(236, 24);
             driveLicense.TabIndex = 1;
             driveLicense.Text = "Водительское удостоверение";
             driveLicense.UseVisualStyleBackColor = true;
@@ -392,7 +392,7 @@
             haveAuto.AutoSize = true;
             haveAuto.Location = new Point(13, 26);
             haveAuto.Name = "haveAuto";
-            haveAuto.Size = new Size(186, 24);
+            haveAuto.Size = new Size(189, 24);
             haveAuto.TabIndex = 0;
             haveAuto.Text = "Наличие личного авто";
             haveAuto.UseVisualStyleBackColor = true;
@@ -466,7 +466,7 @@
             TimeWorkRB.AutoSize = true;
             TimeWorkRB.Location = new Point(223, 48);
             TimeWorkRB.Name = "TimeWorkRB";
-            TimeWorkRB.Size = new Size(160, 24);
+            TimeWorkRB.Size = new Size(163, 24);
             TimeWorkRB.TabIndex = 3;
             TimeWorkRB.TabStop = true;
             TimeWorkRB.Text = "Посменная работа";
@@ -477,7 +477,7 @@
             WorkAtHomeRB.AutoSize = true;
             WorkAtHomeRB.Location = new Point(14, 48);
             WorkAtHomeRB.Name = "WorkAtHomeRB";
-            WorkAtHomeRB.Size = new Size(135, 24);
+            WorkAtHomeRB.Size = new Size(138, 24);
             WorkAtHomeRB.TabIndex = 2;
             WorkAtHomeRB.TabStop = true;
             WorkAtHomeRB.Text = "Работа на дому";
@@ -488,7 +488,7 @@
             PartTimeRB.AutoSize = true;
             PartTimeRB.Location = new Point(223, 19);
             PartTimeRB.Name = "PartTimeRB";
-            PartTimeRB.Size = new Size(172, 24);
+            PartTimeRB.Size = new Size(175, 24);
             PartTimeRB.TabIndex = 1;
             PartTimeRB.TabStop = true;
             PartTimeRB.Text = "Частичная занятость";
@@ -499,7 +499,7 @@
             FullTimeRB.AutoSize = true;
             FullTimeRB.Location = new Point(14, 21);
             FullTimeRB.Name = "FullTimeRB";
-            FullTimeRB.Size = new Size(158, 24);
+            FullTimeRB.Size = new Size(161, 24);
             FullTimeRB.TabIndex = 0;
             FullTimeRB.TabStop = true;
             FullTimeRB.Text = "Полная заняттость";
@@ -512,6 +512,7 @@
             CVtextBox.Size = new Size(750, 147);
             CVtextBox.TabIndex = 19;
             CVtextBox.Text = "";
+            CVtextBox.TextChanged += CVtextBox_TextChanged;
             // 
             // CVLabel
             // 
