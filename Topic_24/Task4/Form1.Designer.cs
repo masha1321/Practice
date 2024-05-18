@@ -93,66 +93,60 @@
             // SurnameLabel
             // 
             SurnameLabel.AutoSize = true;
-            SurnameLabel.Location = new Point(36, 32);
-            SurnameLabel.Margin = new Padding(5, 0, 5, 0);
+            SurnameLabel.Location = new Point(22, 20);
             SurnameLabel.Name = "SurnameLabel";
             helpProvider1.SetShowHelp(SurnameLabel, true);
-            SurnameLabel.Size = new Size(114, 32);
+            SurnameLabel.Size = new Size(70, 20);
             SurnameLabel.TabIndex = 0;
             SurnameLabel.Text = "Surname:";
             // 
             // NameLabel
             // 
             NameLabel.AutoSize = true;
-            NameLabel.Location = new Point(89, 90);
-            NameLabel.Margin = new Padding(5, 0, 5, 0);
+            NameLabel.Location = new Point(55, 56);
             NameLabel.Name = "NameLabel";
             helpProvider1.SetShowHelp(NameLabel, true);
-            NameLabel.Size = new Size(83, 32);
+            NameLabel.Size = new Size(52, 20);
             NameLabel.TabIndex = 1;
             NameLabel.Text = "Name:";
             // 
             // MiddleNameLabel
             // 
             MiddleNameLabel.AutoSize = true;
-            MiddleNameLabel.Location = new Point(37, 142);
-            MiddleNameLabel.Margin = new Padding(5, 0, 5, 0);
+            MiddleNameLabel.Location = new Point(23, 89);
             MiddleNameLabel.Name = "MiddleNameLabel";
             helpProvider1.SetShowHelp(MiddleNameLabel, true);
-            MiddleNameLabel.Size = new Size(137, 32);
+            MiddleNameLabel.Size = new Size(85, 20);
             MiddleNameLabel.TabIndex = 2;
             MiddleNameLabel.Text = "Patronymic:";
             // 
             // SurnameTextBox
             // 
             helpProvider1.SetHelpString(SurnameTextBox, "Field for surname");
-            SurnameTextBox.Location = new Point(169, 27);
-            SurnameTextBox.Margin = new Padding(5);
+            SurnameTextBox.Location = new Point(104, 17);
             SurnameTextBox.Name = "SurnameTextBox";
             helpProvider1.SetShowHelp(SurnameTextBox, true);
-            SurnameTextBox.Size = new Size(420, 39);
+            SurnameTextBox.Size = new Size(260, 27);
             SurnameTextBox.TabIndex = 3;
             toolTip1.SetToolTip(SurnameTextBox, "Field for surname");
             // 
             // NameTextBox
             // 
             helpProvider1.SetHelpString(NameTextBox, "Field for Name");
-            NameTextBox.Location = new Point(167, 85);
-            NameTextBox.Margin = new Padding(5);
+            NameTextBox.Location = new Point(103, 53);
             NameTextBox.Name = "NameTextBox";
             helpProvider1.SetShowHelp(NameTextBox, true);
-            NameTextBox.Size = new Size(422, 39);
+            NameTextBox.Size = new Size(261, 27);
             NameTextBox.TabIndex = 4;
             toolTip1.SetToolTip(NameTextBox, "Field for Name");
             // 
             // MiddleNameTextBox
             // 
             helpProvider1.SetHelpString(MiddleNameTextBox, "Field for patronymic");
-            MiddleNameTextBox.Location = new Point(167, 138);
-            MiddleNameTextBox.Margin = new Padding(5);
+            MiddleNameTextBox.Location = new Point(103, 86);
             MiddleNameTextBox.Name = "MiddleNameTextBox";
             helpProvider1.SetShowHelp(MiddleNameTextBox, true);
-            MiddleNameTextBox.Size = new Size(422, 39);
+            MiddleNameTextBox.Size = new Size(261, 27);
             MiddleNameTextBox.TabIndex = 5;
             toolTip1.SetToolTip(MiddleNameTextBox, "Field for patronymic");
             // 
@@ -160,12 +154,10 @@
             // 
             SexGroupBox.Controls.Add(FemaleRadioButton);
             SexGroupBox.Controls.Add(MaleRadioButton);
-            SexGroupBox.Location = new Point(622, 32);
-            SexGroupBox.Margin = new Padding(5);
+            SexGroupBox.Location = new Point(383, 20);
             SexGroupBox.Name = "SexGroupBox";
-            SexGroupBox.Padding = new Padding(5);
             helpProvider1.SetShowHelp(SexGroupBox, true);
-            SexGroupBox.Size = new Size(213, 149);
+            SexGroupBox.Size = new Size(131, 93);
             SexGroupBox.TabIndex = 6;
             SexGroupBox.TabStop = false;
             SexGroupBox.Text = "Sex:";
@@ -174,11 +166,10 @@
             // 
             FemaleRadioButton.AutoSize = true;
             helpProvider1.SetHelpString(FemaleRadioButton, "Choose Female");
-            FemaleRadioButton.Location = new Point(24, 91);
-            FemaleRadioButton.Margin = new Padding(5);
+            FemaleRadioButton.Location = new Point(15, 57);
             FemaleRadioButton.Name = "FemaleRadioButton";
             helpProvider1.SetShowHelp(FemaleRadioButton, true);
-            FemaleRadioButton.Size = new Size(122, 36);
+            FemaleRadioButton.Size = new Size(78, 24);
             FemaleRadioButton.TabIndex = 1;
             FemaleRadioButton.TabStop = true;
             FemaleRadioButton.Text = "Female";
@@ -189,11 +180,10 @@
             // 
             MaleRadioButton.AutoSize = true;
             helpProvider1.SetHelpString(MaleRadioButton, "Choose Male");
-            MaleRadioButton.Location = new Point(24, 43);
-            MaleRadioButton.Margin = new Padding(5);
+            MaleRadioButton.Location = new Point(15, 27);
             MaleRadioButton.Name = "MaleRadioButton";
             helpProvider1.SetShowHelp(MaleRadioButton, true);
-            MaleRadioButton.Size = new Size(98, 36);
+            MaleRadioButton.Size = new Size(63, 24);
             MaleRadioButton.TabIndex = 0;
             MaleRadioButton.TabStop = true;
             MaleRadioButton.Text = "Male";
@@ -203,12 +193,10 @@
             // BirthDateGroupBox
             // 
             BirthDateGroupBox.Controls.Add(DateBirtPicker);
-            BirthDateGroupBox.Location = new Point(895, 27);
-            BirthDateGroupBox.Margin = new Padding(5);
+            BirthDateGroupBox.Location = new Point(551, 17);
             BirthDateGroupBox.Name = "BirthDateGroupBox";
-            BirthDateGroupBox.Padding = new Padding(5);
             helpProvider1.SetShowHelp(BirthDateGroupBox, true);
-            BirthDateGroupBox.Size = new Size(361, 154);
+            BirthDateGroupBox.Size = new Size(222, 96);
             BirthDateGroupBox.TabIndex = 7;
             BirthDateGroupBox.TabStop = false;
             BirthDateGroupBox.Text = "Date of Birth:";
@@ -216,44 +204,40 @@
             // DateBirtPicker
             // 
             helpProvider1.SetHelpString(DateBirtPicker, "Field for date of birth");
-            DateBirtPicker.Location = new Point(24, 62);
-            DateBirtPicker.Margin = new Padding(5);
+            DateBirtPicker.Location = new Point(15, 39);
             DateBirtPicker.Name = "DateBirtPicker";
             helpProvider1.SetShowHelp(DateBirtPicker, true);
-            DateBirtPicker.Size = new Size(306, 39);
+            DateBirtPicker.Size = new Size(190, 27);
             DateBirtPicker.TabIndex = 0;
             toolTip1.SetToolTip(DateBirtPicker, "Field for date of birth");
             // 
             // LocationLabel
             // 
             LocationLabel.AutoSize = true;
-            LocationLabel.Location = new Point(37, 234);
-            LocationLabel.Margin = new Padding(5, 0, 5, 0);
+            LocationLabel.Location = new Point(23, 146);
             LocationLabel.Name = "LocationLabel";
             helpProvider1.SetShowHelp(LocationLabel, true);
-            LocationLabel.Size = new Size(110, 32);
+            LocationLabel.Size = new Size(69, 20);
             LocationLabel.TabIndex = 8;
             LocationLabel.Text = "Address: ";
             // 
             // EMailLabel
             // 
             EMailLabel.AutoSize = true;
-            EMailLabel.Location = new Point(37, 290);
-            EMailLabel.Margin = new Padding(5, 0, 5, 0);
+            EMailLabel.Location = new Point(23, 181);
             EMailLabel.Name = "EMailLabel";
             helpProvider1.SetShowHelp(EMailLabel, true);
-            EMailLabel.Size = new Size(76, 32);
+            EMailLabel.Size = new Size(49, 20);
             EMailLabel.TabIndex = 9;
             EMailLabel.Text = "Email:";
             // 
             // emailTextBox
             // 
             helpProvider1.SetHelpString(emailTextBox, "Field for email");
-            emailTextBox.Location = new Point(499, 285);
-            emailTextBox.Margin = new Padding(5);
+            emailTextBox.Location = new Point(307, 178);
             emailTextBox.Name = "emailTextBox";
             helpProvider1.SetShowHelp(emailTextBox, true);
-            emailTextBox.Size = new Size(727, 39);
+            emailTextBox.Size = new Size(449, 27);
             emailTextBox.TabIndex = 10;
             toolTip1.SetToolTip(emailTextBox, "Field for email");
             // 
@@ -262,22 +246,20 @@
             LocationTextBox.FormattingEnabled = true;
             helpProvider1.SetHelpString(LocationTextBox, "File for address");
             LocationTextBox.Items.AddRange(new object[] { "Гродно", "Минск", "Витебск", "Гомель", "Могилёв", "Брест" });
-            LocationTextBox.Location = new Point(499, 229);
-            LocationTextBox.Margin = new Padding(5);
+            LocationTextBox.Location = new Point(307, 143);
             LocationTextBox.Name = "LocationTextBox";
             helpProvider1.SetShowHelp(LocationTextBox, true);
-            LocationTextBox.Size = new Size(727, 40);
+            LocationTextBox.Size = new Size(449, 28);
             LocationTextBox.TabIndex = 11;
             toolTip1.SetToolTip(LocationTextBox, "File for address");
             // 
             // phoneLabel
             // 
             phoneLabel.AutoSize = true;
-            phoneLabel.Location = new Point(37, 350);
-            phoneLabel.Margin = new Padding(5, 0, 5, 0);
+            phoneLabel.Location = new Point(23, 219);
             phoneLabel.Name = "phoneLabel";
             helpProvider1.SetShowHelp(phoneLabel, true);
-            phoneLabel.Size = new Size(182, 32);
+            phoneLabel.Size = new Size(111, 20);
             phoneLabel.TabIndex = 12;
             phoneLabel.Text = "Phone Number:";
             // 
@@ -286,22 +268,20 @@
             operatorBox.FormattingEnabled = true;
             helpProvider1.SetHelpString(operatorBox, "Field for mobil operator");
             operatorBox.Items.AddRange(new object[] { "МТС", "А1", "Life" });
-            operatorBox.Location = new Point(499, 346);
-            operatorBox.Margin = new Padding(5);
+            operatorBox.Location = new Point(307, 216);
             operatorBox.Name = "operatorBox";
             helpProvider1.SetShowHelp(operatorBox, true);
-            operatorBox.Size = new Size(171, 40);
+            operatorBox.Size = new Size(107, 28);
             operatorBox.TabIndex = 13;
             toolTip1.SetToolTip(operatorBox, "Field for mobil operator");
             // 
             // phoneBox
             // 
             helpProvider1.SetHelpString(phoneBox, "Field for phone number");
-            phoneBox.Location = new Point(712, 347);
-            phoneBox.Margin = new Padding(5);
+            phoneBox.Location = new Point(438, 217);
             phoneBox.Name = "phoneBox";
             helpProvider1.SetShowHelp(phoneBox, true);
-            phoneBox.Size = new Size(514, 39);
+            phoneBox.Size = new Size(318, 27);
             phoneBox.TabIndex = 14;
             toolTip1.SetToolTip(phoneBox, "Field for phone number");
             // 
@@ -312,12 +292,10 @@
             workExpGroupBox.Controls.Add(MoreThen10RB);
             workExpGroupBox.Controls.Add(From1To5RB);
             workExpGroupBox.Controls.Add(NoWorkRB);
-            workExpGroupBox.Location = new Point(37, 429);
-            workExpGroupBox.Margin = new Padding(5);
+            workExpGroupBox.Location = new Point(23, 268);
             workExpGroupBox.Name = "workExpGroupBox";
-            workExpGroupBox.Padding = new Padding(5);
             helpProvider1.SetShowHelp(workExpGroupBox, true);
-            workExpGroupBox.Size = new Size(1219, 200);
+            workExpGroupBox.Size = new Size(750, 125);
             workExpGroupBox.TabIndex = 15;
             workExpGroupBox.TabStop = false;
             workExpGroupBox.Text = "Work Experience:";
@@ -326,11 +304,10 @@
             // 
             From5To9RB.AutoSize = true;
             helpProvider1.SetHelpString(From5To9RB, "If you have from 5 to 9 years of experience");
-            From5To9RB.Location = new Point(484, 106);
-            From5To9RB.Margin = new Padding(5);
+            From5To9RB.Location = new Point(298, 66);
             From5To9RB.Name = "From5To9RB";
             helpProvider1.SetShowHelp(From5To9RB, true);
-            From5To9RB.Size = new Size(231, 36);
+            From5To9RB.Size = new Size(144, 24);
             From5To9RB.TabIndex = 4;
             From5To9RB.TabStop = true;
             From5To9RB.Text = "From 5 to 9 years";
@@ -341,11 +318,10 @@
             // 
             LessThen1RB.AutoSize = true;
             helpProvider1.SetHelpString(LessThen1RB, "If you have <1 year of experience");
-            LessThen1RB.Location = new Point(36, 106);
-            LessThen1RB.Margin = new Padding(5);
+            LessThen1RB.Location = new Point(22, 66);
             LessThen1RB.Name = "LessThen1RB";
             helpProvider1.SetShowHelp(LessThen1RB, true);
-            LessThen1RB.Size = new Size(217, 36);
+            LessThen1RB.Size = new Size(134, 24);
             LessThen1RB.TabIndex = 3;
             LessThen1RB.TabStop = true;
             LessThen1RB.Text = "Less then 1 year";
@@ -356,11 +332,10 @@
             // 
             MoreThen10RB.AutoSize = true;
             helpProvider1.SetHelpString(MoreThen10RB, "If you have more than 10 years of experience");
-            MoreThen10RB.Location = new Point(912, 42);
-            MoreThen10RB.Margin = new Padding(5);
+            MoreThen10RB.Location = new Point(561, 26);
             MoreThen10RB.Name = "MoreThen10RB";
             helpProvider1.SetShowHelp(MoreThen10RB, true);
-            MoreThen10RB.Size = new Size(252, 36);
+            MoreThen10RB.Size = new Size(156, 24);
             MoreThen10RB.TabIndex = 2;
             MoreThen10RB.TabStop = true;
             MoreThen10RB.Text = "More than 10 years";
@@ -371,11 +346,10 @@
             // 
             From1To5RB.AutoSize = true;
             helpProvider1.SetHelpString(From1To5RB, "If you have from 1 to 5 years of experience");
-            From1To5RB.Location = new Point(484, 42);
-            From1To5RB.Margin = new Padding(5);
+            From1To5RB.Location = new Point(298, 26);
             From1To5RB.Name = "From1To5RB";
             helpProvider1.SetShowHelp(From1To5RB, true);
-            From1To5RB.Size = new Size(231, 36);
+            From1To5RB.Size = new Size(144, 24);
             From1To5RB.TabIndex = 1;
             From1To5RB.TabStop = true;
             From1To5RB.Text = "From 1 to 5 years";
@@ -386,11 +360,10 @@
             // 
             NoWorkRB.AutoSize = true;
             helpProvider1.SetHelpString(NoWorkRB, "If you have 0 experience");
-            NoWorkRB.Location = new Point(36, 42);
-            NoWorkRB.Margin = new Padding(5);
+            NoWorkRB.Location = new Point(22, 26);
             NoWorkRB.Name = "NoWorkRB";
             helpProvider1.SetShowHelp(NoWorkRB, true);
-            NoWorkRB.Size = new Size(200, 36);
+            NoWorkRB.Size = new Size(126, 24);
             NoWorkRB.TabIndex = 0;
             NoWorkRB.TabStop = true;
             NoWorkRB.Text = "No experience";
@@ -406,12 +379,10 @@
             OthersGroupBox.Controls.Add(driveCategory);
             OthersGroupBox.Controls.Add(driveLicense);
             OthersGroupBox.Controls.Add(haveAuto);
-            OthersGroupBox.Location = new Point(37, 656);
-            OthersGroupBox.Margin = new Padding(5);
+            OthersGroupBox.Location = new Point(23, 410);
             OthersGroupBox.Name = "OthersGroupBox";
-            OthersGroupBox.Padding = new Padding(5);
             helpProvider1.SetShowHelp(OthersGroupBox, true);
-            OthersGroupBox.Size = new Size(470, 238);
+            OthersGroupBox.Size = new Size(289, 149);
             OthersGroupBox.TabIndex = 16;
             OthersGroupBox.TabStop = false;
             OthersGroupBox.Text = "OtherDetails";
@@ -420,11 +391,10 @@
             // 
             categoryD.AutoSize = true;
             helpProvider1.SetHelpString(categoryD, "If you have category D");
-            categoryD.Location = new Point(262, 184);
-            categoryD.Margin = new Padding(5);
+            categoryD.Location = new Point(161, 115);
             categoryD.Name = "categoryD";
             helpProvider1.SetShowHelp(categoryD, true);
-            categoryD.Size = new Size(63, 36);
+            categoryD.Size = new Size(42, 24);
             categoryD.TabIndex = 6;
             categoryD.Text = "D";
             toolTip1.SetToolTip(categoryD, "If you have category D");
@@ -434,11 +404,10 @@
             // 
             categoryC.AutoSize = true;
             helpProvider1.SetHelpString(categoryC, "If you have category C");
-            categoryC.Location = new Point(179, 184);
-            categoryC.Margin = new Padding(5);
+            categoryC.Location = new Point(110, 115);
             categoryC.Name = "categoryC";
             helpProvider1.SetShowHelp(categoryC, true);
-            categoryC.Size = new Size(61, 36);
+            categoryC.Size = new Size(40, 24);
             categoryC.TabIndex = 5;
             categoryC.Text = "C";
             toolTip1.SetToolTip(categoryC, "If you have category C");
@@ -448,11 +417,10 @@
             // 
             categoryB.AutoSize = true;
             helpProvider1.SetHelpString(categoryB, "If you have category B");
-            categoryB.Location = new Point(107, 184);
-            categoryB.Margin = new Padding(5);
+            categoryB.Location = new Point(66, 115);
             categoryB.Name = "categoryB";
             helpProvider1.SetShowHelp(categoryB, true);
-            categoryB.Size = new Size(60, 36);
+            categoryB.Size = new Size(40, 24);
             categoryB.TabIndex = 4;
             categoryB.Text = "B";
             toolTip1.SetToolTip(categoryB, "If you have category B");
@@ -462,11 +430,10 @@
             // 
             categoryA.AutoSize = true;
             helpProvider1.SetHelpString(categoryA, "If you have category A");
-            categoryA.Location = new Point(36, 184);
-            categoryA.Margin = new Padding(5);
+            categoryA.Location = new Point(22, 115);
             categoryA.Name = "categoryA";
             helpProvider1.SetShowHelp(categoryA, true);
-            categoryA.Size = new Size(61, 36);
+            categoryA.Size = new Size(41, 24);
             categoryA.TabIndex = 3;
             categoryA.Text = "A";
             toolTip1.SetToolTip(categoryA, "If you have category A");
@@ -475,11 +442,10 @@
             // driveCategory
             // 
             driveCategory.AutoSize = true;
-            driveCategory.Location = new Point(21, 147);
-            driveCategory.Margin = new Padding(5, 0, 5, 0);
+            driveCategory.Location = new Point(13, 92);
             driveCategory.Name = "driveCategory";
             helpProvider1.SetShowHelp(driveCategory, true);
-            driveCategory.Size = new Size(202, 32);
+            driveCategory.Size = new Size(126, 20);
             driveCategory.TabIndex = 2;
             driveCategory.Text = "Liscence category";
             // 
@@ -487,11 +453,10 @@
             // 
             driveLicense.AutoSize = true;
             helpProvider1.SetHelpString(driveLicense, "If you have drive liscence");
-            driveLicense.Location = new Point(21, 90);
-            driveLicense.Margin = new Padding(5);
+            driveLicense.Location = new Point(13, 56);
             driveLicense.Name = "driveLicense";
             helpProvider1.SetShowHelp(driveLicense, true);
-            driveLicense.Size = new Size(193, 36);
+            driveLicense.Size = new Size(122, 24);
             driveLicense.TabIndex = 1;
             driveLicense.Text = "Drive liscence";
             toolTip1.SetToolTip(driveLicense, "If you have drive liscence");
@@ -501,11 +466,10 @@
             // 
             haveAuto.AutoSize = true;
             helpProvider1.SetHelpString(haveAuto, "If you have your own car");
-            haveAuto.Location = new Point(21, 42);
-            haveAuto.Margin = new Padding(5);
+            haveAuto.Location = new Point(13, 26);
             haveAuto.Name = "haveAuto";
             helpProvider1.SetShowHelp(haveAuto, true);
-            haveAuto.Size = new Size(345, 36);
+            haveAuto.Size = new Size(220, 24);
             haveAuto.TabIndex = 0;
             haveAuto.Text = "Availability of a personal car";
             toolTip1.SetToolTip(haveAuto, "If you have your own car");
@@ -518,12 +482,10 @@
             salaryGroupBox.Controls.Add(FromLabel);
             salaryGroupBox.Controls.Add(ToSalary);
             salaryGroupBox.Controls.Add(FromSalary);
-            salaryGroupBox.Location = new Point(613, 656);
-            salaryGroupBox.Margin = new Padding(5);
+            salaryGroupBox.Location = new Point(377, 410);
             salaryGroupBox.Name = "salaryGroupBox";
-            salaryGroupBox.Padding = new Padding(5);
             helpProvider1.SetShowHelp(salaryGroupBox, true);
-            salaryGroupBox.Size = new Size(643, 104);
+            salaryGroupBox.Size = new Size(396, 65);
             salaryGroupBox.TabIndex = 17;
             salaryGroupBox.TabStop = false;
             salaryGroupBox.Text = "Wage bill:";
@@ -531,11 +493,10 @@
             // ToLabel
             // 
             ToLabel.AutoSize = true;
-            ToLabel.Location = new Point(348, 45);
-            ToLabel.Margin = new Padding(5, 0, 5, 0);
+            ToLabel.Location = new Point(214, 28);
             ToLabel.Name = "ToLabel";
             helpProvider1.SetShowHelp(ToLabel, true);
-            ToLabel.Size = new Size(39, 32);
+            ToLabel.Size = new Size(25, 20);
             ToLabel.TabIndex = 3;
             ToLabel.Text = "To";
             // 
@@ -543,35 +504,32 @@
             // 
             label1.AutoSize = true;
             label1.ImeMode = ImeMode.NoControl;
-            label1.Location = new Point(0, 46);
-            label1.Margin = new Padding(5, 0, 5, 0);
+            label1.Location = new Point(0, 29);
             label1.Name = "label1";
             helpProvider1.SetShowHelp(label1, true);
-            label1.Size = new Size(69, 32);
+            label1.Size = new Size(43, 20);
             label1.TabIndex = 2;
             label1.Text = "From";
             // 
             // FromLabel
             // 
             FromLabel.AutoSize = true;
-            FromLabel.Location = new Point(10, 46);
-            FromLabel.Margin = new Padding(5, 0, 5, 0);
+            FromLabel.Location = new Point(6, 29);
             FromLabel.Name = "FromLabel";
             helpProvider1.SetShowHelp(FromLabel, true);
-            FromLabel.Size = new Size(69, 32);
+            FromLabel.Size = new Size(43, 20);
             FromLabel.TabIndex = 2;
             FromLabel.Text = "From";
             // 
             // ToSalary
             // 
             helpProvider1.SetHelpString(ToSalary, "Field for max bill you want");
-            ToSalary.Location = new Point(400, 42);
-            ToSalary.Margin = new Padding(5);
+            ToSalary.Location = new Point(246, 26);
             ToSalary.Maximum = new decimal(new int[] { 10000000, 0, 0, 0 });
             ToSalary.Minimum = new decimal(new int[] { 550, 0, 0, 0 });
             ToSalary.Name = "ToSalary";
             helpProvider1.SetShowHelp(ToSalary, true);
-            ToSalary.Size = new Size(244, 39);
+            ToSalary.Size = new Size(150, 27);
             ToSalary.TabIndex = 1;
             toolTip1.SetToolTip(ToSalary, "Field for max bill you want");
             ToSalary.Value = new decimal(new int[] { 550, 0, 0, 0 });
@@ -579,13 +537,12 @@
             // FromSalary
             // 
             helpProvider1.SetHelpString(FromSalary, "Field for minimum bill you want");
-            FromSalary.Location = new Point(75, 42);
-            FromSalary.Margin = new Padding(5);
+            FromSalary.Location = new Point(46, 26);
             FromSalary.Maximum = new decimal(new int[] { 10000000, 0, 0, 0 });
             FromSalary.Minimum = new decimal(new int[] { 550, 0, 0, 0 });
             FromSalary.Name = "FromSalary";
             helpProvider1.SetShowHelp(FromSalary, true);
-            FromSalary.Size = new Size(244, 39);
+            FromSalary.Size = new Size(150, 27);
             FromSalary.TabIndex = 0;
             toolTip1.SetToolTip(FromSalary, "Field for minimum bill you want");
             FromSalary.Value = new decimal(new int[] { 550, 0, 0, 0 });
@@ -596,12 +553,10 @@
             workTimeGroupBox.Controls.Add(WorkAtHomeRB);
             workTimeGroupBox.Controls.Add(PartTimeRB);
             workTimeGroupBox.Controls.Add(FullTimeRB);
-            workTimeGroupBox.Location = new Point(613, 770);
-            workTimeGroupBox.Margin = new Padding(5);
+            workTimeGroupBox.Location = new Point(377, 481);
             workTimeGroupBox.Name = "workTimeGroupBox";
-            workTimeGroupBox.Padding = new Padding(5);
             helpProvider1.SetShowHelp(workTimeGroupBox, true);
-            workTimeGroupBox.Size = new Size(643, 125);
+            workTimeGroupBox.Size = new Size(396, 78);
             workTimeGroupBox.TabIndex = 18;
             workTimeGroupBox.TabStop = false;
             workTimeGroupBox.Text = "Preferred work schedule:";
@@ -610,11 +565,10 @@
             // 
             TimeWorkRB.AutoSize = true;
             helpProvider1.SetHelpString(TimeWorkRB, "If you want shift work");
-            TimeWorkRB.Location = new Point(362, 77);
-            TimeWorkRB.Margin = new Padding(5);
+            TimeWorkRB.Location = new Point(223, 48);
             TimeWorkRB.Name = "TimeWorkRB";
             helpProvider1.SetShowHelp(TimeWorkRB, true);
-            TimeWorkRB.Size = new Size(152, 36);
+            TimeWorkRB.Size = new Size(96, 24);
             TimeWorkRB.TabIndex = 3;
             TimeWorkRB.TabStop = true;
             TimeWorkRB.Text = "Shift work";
@@ -625,11 +579,10 @@
             // 
             WorkAtHomeRB.AutoSize = true;
             helpProvider1.SetHelpString(WorkAtHomeRB, "If you want work at home");
-            WorkAtHomeRB.Location = new Point(23, 77);
-            WorkAtHomeRB.Margin = new Padding(5);
+            WorkAtHomeRB.Location = new Point(14, 48);
             WorkAtHomeRB.Name = "WorkAtHomeRB";
             helpProvider1.SetShowHelp(WorkAtHomeRB, true);
-            WorkAtHomeRB.Size = new Size(196, 36);
+            WorkAtHomeRB.Size = new Size(123, 24);
             WorkAtHomeRB.TabIndex = 2;
             WorkAtHomeRB.TabStop = true;
             WorkAtHomeRB.Text = "Work at home";
@@ -640,11 +593,10 @@
             // 
             PartTimeRB.AutoSize = true;
             helpProvider1.SetHelpString(PartTimeRB, "If you want parttime work");
-            PartTimeRB.Location = new Point(362, 30);
-            PartTimeRB.Margin = new Padding(5);
+            PartTimeRB.Location = new Point(223, 19);
             PartTimeRB.Name = "PartTimeRB";
             helpProvider1.SetShowHelp(PartTimeRB, true);
-            PartTimeRB.Size = new Size(133, 36);
+            PartTimeRB.Size = new Size(85, 24);
             PartTimeRB.TabIndex = 1;
             PartTimeRB.TabStop = true;
             PartTimeRB.Text = "Parttime";
@@ -655,11 +607,10 @@
             // 
             FullTimeRB.AutoSize = true;
             helpProvider1.SetHelpString(FullTimeRB, "If you want fulltime work");
-            FullTimeRB.Location = new Point(23, 34);
-            FullTimeRB.Margin = new Padding(5);
+            FullTimeRB.Location = new Point(14, 21);
             FullTimeRB.Name = "FullTimeRB";
             helpProvider1.SetShowHelp(FullTimeRB, true);
-            FullTimeRB.Size = new Size(131, 36);
+            FullTimeRB.Size = new Size(83, 24);
             FullTimeRB.TabIndex = 0;
             FullTimeRB.TabStop = true;
             FullTimeRB.Text = "Fulltime";
@@ -669,11 +620,10 @@
             // CVtextBox
             // 
             helpProvider1.SetHelpString(CVtextBox, "All your data");
-            CVtextBox.Location = new Point(37, 952);
-            CVtextBox.Margin = new Padding(5);
+            CVtextBox.Location = new Point(23, 595);
             CVtextBox.Name = "CVtextBox";
             helpProvider1.SetShowHelp(CVtextBox, true);
-            CVtextBox.Size = new Size(1216, 233);
+            CVtextBox.Size = new Size(750, 147);
             CVtextBox.TabIndex = 19;
             CVtextBox.Text = "";
             toolTip1.SetToolTip(CVtextBox, "All your data");
@@ -681,22 +631,20 @@
             // CVLabel
             // 
             CVLabel.AutoSize = true;
-            CVLabel.Location = new Point(37, 915);
-            CVLabel.Margin = new Padding(5, 0, 5, 0);
+            CVLabel.Location = new Point(23, 572);
             CVLabel.Name = "CVLabel";
             helpProvider1.SetShowHelp(CVLabel, true);
-            CVLabel.Size = new Size(102, 32);
+            CVLabel.Size = new Size(66, 20);
             CVLabel.TabIndex = 20;
             CVLabel.Text = "All Data:";
             // 
             // SaveButton
             // 
             helpProvider1.SetHelpString(SaveButton, "Button for saving your info");
-            SaveButton.Location = new Point(37, 1197);
-            SaveButton.Margin = new Padding(5);
+            SaveButton.Location = new Point(23, 748);
             SaveButton.Name = "SaveButton";
             helpProvider1.SetShowHelp(SaveButton, true);
-            SaveButton.Size = new Size(250, 46);
+            SaveButton.Size = new Size(154, 29);
             SaveButton.TabIndex = 21;
             SaveButton.Text = "Save";
             toolTip1.SetToolTip(SaveButton, "Button for saving your info");
@@ -706,11 +654,10 @@
             // ClearButton
             // 
             helpProvider1.SetHelpString(ClearButton, "Button for clearing form");
-            ClearButton.Location = new Point(299, 1197);
-            ClearButton.Margin = new Padding(5);
+            ClearButton.Location = new Point(184, 748);
             ClearButton.Name = "ClearButton";
             helpProvider1.SetShowHelp(ClearButton, true);
-            ClearButton.Size = new Size(250, 46);
+            ClearButton.Size = new Size(154, 29);
             ClearButton.TabIndex = 22;
             ClearButton.Text = "Clear";
             toolTip1.SetToolTip(ClearButton, "Button for clearing form");
@@ -720,11 +667,10 @@
             // CancelButton
             // 
             helpProvider1.SetHelpString(CancelButton, "Button for closing form");
-            CancelButton.Location = new Point(1006, 1197);
-            CancelButton.Margin = new Padding(5);
+            CancelButton.Location = new Point(619, 748);
             CancelButton.Name = "CancelButton";
             helpProvider1.SetShowHelp(CancelButton, true);
-            CancelButton.Size = new Size(250, 46);
+            CancelButton.Size = new Size(154, 29);
             CancelButton.TabIndex = 23;
             CancelButton.Text = "Close";
             toolTip1.SetToolTip(CancelButton, "Button for closing form");
@@ -738,11 +684,10 @@
             // button1
             // 
             helpProvider1.SetHelpString(button1, "Button for help menu");
-            button1.Location = new Point(559, 1197);
-            button1.Margin = new Padding(5);
+            button1.Location = new Point(344, 748);
             button1.Name = "button1";
             helpProvider1.SetShowHelp(button1, true);
-            button1.Size = new Size(250, 46);
+            button1.Size = new Size(154, 29);
             button1.TabIndex = 24;
             button1.Text = "Help";
             toolTip1.SetToolTip(button1, "Button for help menu");
@@ -751,9 +696,9 @@
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(13F, 32F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1300, 1253);
+            ClientSize = new Size(800, 659);
             Controls.Add(button1);
             Controls.Add(CancelButton);
             Controls.Add(ClearButton);
@@ -781,12 +726,12 @@
             Controls.Add(SurnameLabel);
             FormBorderStyle = FormBorderStyle.FixedDialog;
             HelpButton = true;
-            Margin = new Padding(5);
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "Form1";
             helpProvider1.SetShowHelp(this, true);
             Text = "Form1";
+            Load += Form1_Load;
             SexGroupBox.ResumeLayout(false);
             SexGroupBox.PerformLayout();
             BirthDateGroupBox.ResumeLayout(false);

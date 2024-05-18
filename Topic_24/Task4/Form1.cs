@@ -135,5 +135,10 @@ namespace Task4
         {
             Help.ShowHelp(this, helpProvider1.HelpNamespace);
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

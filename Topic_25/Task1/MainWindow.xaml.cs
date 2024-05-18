@@ -24,20 +24,11 @@ namespace Task1
 
         private void ButtonRun_Click(object sender, RoutedEventArgs e)
         {
-            string hello = "Masha";
-            string input = string.Empty;
-            if (string.IsNullOrEmpty(textBoxEnterName.Text)
-                || string.IsNullOrWhiteSpace(textBoxEnterName.Text))
-            {
-                input = "Hi!";
-            }
-            else
-            {
-                input = textBoxEnterName.Text;
-            }
-            textBlockHello.Text = $"{hello} {input}";
+            string name = NameInput.Text;
+            textBlockHello.Text = $"Hello, {name}!";
         }
     }
 }
+
     
 
