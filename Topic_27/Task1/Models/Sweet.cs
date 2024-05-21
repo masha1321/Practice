@@ -2,10 +2,11 @@
 
 namespace Task1.Models
 {
-    public class Flower
+    public class Sweet
     {
         public string Type { get; set; }
         public double Price { get; set; }
+        public object Attributes { get; internal set; }
 
         public override string ToString()
         {
@@ -14,5 +15,7 @@ namespace Task1.Models
                 .AppendLine($"Price: {Price}")
                 .ToString();
         }
+
+       
     }
 }

@@ -5,9 +5,9 @@ namespace Task1.Interfaces
     public interface IXmlWorker
     {
         void Load(string xmlDocPath);
-        void Add(Flower flower);
+        void Add(Sweet sweet);
         void Delete(string type);
-        Flower FindBy(string type);
-        List<Flower> GetAll();
+        Sweet FindBy(string type);
+        List<Sweet> GetAll();
     }
 }

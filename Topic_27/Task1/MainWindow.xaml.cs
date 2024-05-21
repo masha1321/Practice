@@ -27,31 +27,31 @@ namespace Task1
             _worker = new XmlDocumentWorker(_logger);
         }
 
-        private void ButtonFindFlowerType_Click(object sender, RoutedEventArgs e)
+        private void ButtonFindSweetType_Click(object sender, RoutedEventArgs e)
         {
             if (IsFileOpened)
             {
-                if (!string.IsNullOrEmpty(textBoxFlowerType.Text) || !string.IsNullOrWhiteSpace(textBoxFlowerType.Text))
+                if (!string.IsNullOrEmpty(textBoxSweetType.Text) || !string.IsNullOrWhiteSpace(textBoxSweetType.Text))
                 {
-                    var flower = _worker.FindBy(textBoxFlowerType.Text);
+                    var sweet = _worker.FindBy(textBoxSweetType.Text);
 
                     if (radioButtonTextBox.IsChecked == true)
                     {
-                        PrintFlower(flower);
+                        PrintSweet(sweet);
                     }
                     else if (radioButtonTreeView.IsChecked == true)
                     {
-                        PrintFlowerToTreeView(flower);
+                        PrintSweetToTreeView(sweet);
                     }
                     else if (radioButtonListBox.IsChecked == true)
                     {
-                        PrintFlowerToListBox(flower);
+                        PrintSweetToListBox(sweet);
                     }
-                    textBoxFlowerType.Text = string.Empty;
+                    textBoxSweetType.Text = string.Empty;
                 }
                 else
                 {
-                    MessageBox.Show("Введите название цветка для поиска!!!");
+                    MessageBox.Show("Введите название конфеты для поиска!!!");
                 }
             }
             else
@@ -64,25 +64,25 @@ namespace Task1
         {
             if (IsFileOpened)
             {
-                if (!string.IsNullOrEmpty(textBoxDeleteFlowerType.Text) || !string.IsNullOrWhiteSpace(textBoxDeleteFlowerType.Text))
+                if (!string.IsNullOrEmpty(textBoxDeleteSweetType.Text) || !string.IsNullOrWhiteSpace(textBoxDeleteSweetType.Text))
                 {
-                    _worker.Delete(textBoxDeleteFlowerType.Text);
+                    _worker.Delete(textBoxDeleteSweetType.Text);
                     if (radioButtonTextBox.IsChecked == true)
                     {
-                        PrintFlowers(_worker.GetAll());
+                        PrintSweet(_worker.GetAll());
                     }
                     else if (radioButtonTreeView.IsChecked == true)
                     {
-                        PrintFlowersToTreeView(_worker.GetAll());
+                        PrintSweetsToTreeView(_worker.GetAll());
                     }
                     else if (radioButtonListBox.IsChecked == true)
                     {
-                        PrintFlowersToListBox(_worker.GetAll());
+                        PrintSweetsToListBox(_worker.GetAll());
                     }
                 }
                 else
                 {
-                    MessageBox.Show("Введите название цветка для удаления!!!");
+                    MessageBox.Show("Введите название сладости для удаления!!!");
                 }
             }
             else
@@ -95,30 +95,30 @@ namespace Task1
         {
             if (IsFileOpened)
             {
-                var addFlowerForm = new AddFlowerWindow();
+                var addSweetForm = new AddSweetWindow();
 
-                var result = addFlowerForm.ShowDialog();
+                var result = addSweetForm.ShowDialog();
 
                 if (result.HasValue && result.Value)
                 {
-                    var newFlowerType = addFlowerForm.textBoxFlowerType.Text;
-                    var newFlowerPrice = double.Parse(addFlowerForm.textBoxFlowerPrice.Text);
+                    var newSweetType = addSweetForm.textBoxSweetType.Text;
+                    var newSweetPrice = double.Parse(addSweetForm.textBoxSweetPrice.Text);
 
-                    var newFlower = new Flower { Type = newFlowerType, Price = newFlowerPrice };
+                    var newSweet = new Sweet { Type = newSweetType, Price = newSweetPrice };
 
-                    _worker.Add(newFlower);
+                    _worker.Add(newSweet);
 
                     if (radioButtonTextBox.IsChecked == true)
                     {
-                        PrintFlowers(_worker.GetAll());
+                        PrintSweet(_worker.GetAll());
                     }
                     else if (radioButtonTreeView.IsChecked == true)
                     {
-                        PrintFlowersToTreeView(_worker.GetAll());
+                        PrintSweetsToTreeView(_worker.GetAll());
                     }
                     else if (radioButtonListBox.IsChecked == true)
                     {
-                        PrintFlowersToListBox(_worker.GetAll());
+                        PrintSweetsToListBox(_worker.GetAll());
                     }
                 }
             }
@@ -133,74 +133,74 @@ namespace Task1
             Close();
         }
 
-        private void PrintFlower(Flower flower)
+        private void PrintSweet(Sweet sweet)
         {
-            textBlockXMLFileContent.Text = "======Flower======" + Environment.NewLine;
-            textBlockXMLFileContent.Text += flower?.ToString() ?? "Flower not found";
+            textBlockXMLFileContent.Text = "======Sweet======" + Environment.NewLine;
+            textBlockXMLFileContent.Text += sweet?.ToString() ?? "Sweet not found";
         }
 
-        private void PrintFlowers(List<Flower> flowers)
+        private void PrintSweet(List<Sweet> sweets)
         {
-            textBlockXMLFileContent.Text = "======Flowers======" + Environment.NewLine;
-            foreach (var flower in flowers)
+            textBlockXMLFileContent.Text = "======Sweets======" + Environment.NewLine;
+            foreach (var sweet in sweets)
             {
-                textBlockXMLFileContent.Text += flower.ToString();
+                textBlockXMLFileContent.Text += sweet.ToString();
             }
         }
-        private void PrintFlowerToTreeView(Flower flower)
+        private void PrintSweetToTreeView(Sweet sweet)
         {
             treeViewXMLFileContent.Items.Clear();
 
-            if (flower != null)
+            if (sweet != null)
             {
-                TreeViewItem flowerNode = new TreeViewItem();
-                flowerNode.Header = "Flower: " + flower.Type;
+                TreeViewItem sweetNode = new TreeViewItem();
+                sweetNode.Header = "Sweet: " + sweet.Type;
 
                 TreeViewItem priceNode = new TreeViewItem();
-                priceNode.Header = "Price: " + flower.Price;
-                flowerNode.Items.Add(priceNode);
+                priceNode.Header = "Price: " + sweet.Price;
+                sweetNode.Items.Add(priceNode);
 
-                treeViewXMLFileContent.Items.Add(flowerNode);
-                flowerNode.IsExpanded = true;
+                treeViewXMLFileContent.Items.Add(sweetNode);
+                sweetNode.IsExpanded = true;
             }
         }
 
-        private void PrintFlowersToTreeView(List<Flower> flowers)
+        private void PrintSweetsToTreeView(List<Sweet> sweets)
         {
             treeViewXMLFileContent.Items.Clear();
 
-            foreach (var flower in flowers)
+            foreach (var sweet in sweets)
             {
-                TreeViewItem flowerNode = new TreeViewItem();
-                flowerNode.Header = "Flower: " + flower.Type;
+                TreeViewItem sweetNode = new TreeViewItem();
+                sweetNode.Header = "Sweet: " + sweet.Type;
 
                 TreeViewItem priceNode = new TreeViewItem();
-                priceNode.Header = "Price: " + flower.Price;
-                flowerNode.Items.Add(priceNode);
+                priceNode.Header = "Price: " + sweet.Price;
+                sweetNode.Items.Add(priceNode);
 
-                treeViewXMLFileContent.Items.Add(flowerNode);
-                flowerNode.IsExpanded = true;
+                treeViewXMLFileContent.Items.Add(sweetNode);
+                sweetNode.IsExpanded = true;
 
             }
         }
 
-        private void PrintFlowerToListBox(Flower flower)
+        private void PrintSweetToListBox(Sweet sweet)
         {
             listBoxXMLFileContent.Items.Clear();
 
-            if (flower != null)
+            if (sweet != null)
             {
-                listBoxXMLFileContent.Items.Add("Flower: " + flower.Type + ", Price: " + flower.Price);
+                listBoxXMLFileContent.Items.Add("Sweet: " + sweet.Type + ", Price: " + sweet.Price);
             }
         }
 
-        private void PrintFlowersToListBox(List<Flower> flowers)
+        private void PrintSweetsToListBox(List<Sweet> sweets)
         {
             listBoxXMLFileContent.Items.Clear();
 
-            foreach (var flower in flowers)
+            foreach (var sweet in sweets)
             {
-                listBoxXMLFileContent.Items.Add("Flower: " + flower.Type + ", Price: " + flower.Price);
+                listBoxXMLFileContent.Items.Add("Sweet: " + sweet.Type + ", Price: " + sweet.Price);
             }
         }
 
@@ -222,15 +222,15 @@ namespace Task1
                 IsFileOpened = true;
                 if (radioButtonTextBox.IsChecked == true)
                 {
-                    PrintFlowers(_worker.GetAll());
+                    PrintSweet(_worker.GetAll());
                 }
                 else if (radioButtonTreeView.IsChecked == true)
                 {
-                    PrintFlowersToTreeView(_worker.GetAll());
+                    PrintSweetsToTreeView(_worker.GetAll());
                 }
                 else if (radioButtonListBox.IsChecked == true)
                 {
-                    PrintFlowersToListBox(_worker.GetAll());
+                    PrintSweetsToListBox(_worker.GetAll());
                 }
             }
         }
@@ -241,15 +241,15 @@ namespace Task1
             {
                 if (radioButtonTextBox.IsChecked == true)
                 {
-                    PrintFlowers(_worker.GetAll());
+                    PrintSweet(_worker.GetAll());
                 }
                 else if (radioButtonTreeView.IsChecked == true)
                 {
-                    PrintFlowersToTreeView(_worker.GetAll());
+                    PrintSweetsToTreeView(_worker.GetAll());
                 }
                 else if (radioButtonListBox.IsChecked == true)
                 {
-                    PrintFlowersToListBox(_worker.GetAll());
+                    PrintToListBox(_worker.GetAll());
                 }
             }
 
@@ -271,6 +271,11 @@ namespace Task1
                 treeViewXMLFileContent.Visibility = Visibility.Collapsed;
                 listBoxXMLFileContent.Visibility = Visibility.Visible;
             }
+        }
+
+        private void PrintToListBox(List<Sweet> sweets)
+        {
+            throw new NotImplementedException();
         }
     }
 }

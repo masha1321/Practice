@@ -10,6 +10,7 @@ namespace Task1.Share
         private readonly XmlDocument _xmlDocument;
         private readonly ILogger _logger;
         private string _xmlFilePath;
+        private List<Sweet> sweet;
 
         public XmlDocumentWorker(ILogger logger)
         {
@@ -17,24 +18,24 @@ namespace Task1.Share
             _xmlDocument = new XmlDocument();
         }
 
-        public void Add(Flower flower)
+        public void Add(Sweet sweet)
         {
             var xRoot = _xmlDocument.DocumentElement;
 
-            XmlElement flowerElem = _xmlDocument.CreateElement("Flower");
+            XmlElement sweetElem = _xmlDocument.CreateElement("Sweet");
 
             XmlAttribute typeAttribute = _xmlDocument.CreateAttribute("Type");
-            XmlText typeText = _xmlDocument.CreateTextNode(flower.Type);
+            XmlText typeText = _xmlDocument.CreateTextNode(sweet.Type);
             typeAttribute.AppendChild(typeText);
-            flowerElem.Attributes.Append(typeAttribute);
+           
 
             XmlElement priceElem = _xmlDocument.CreateElement("Price");
-            XmlText priceText = _xmlDocument.CreateTextNode(flower.Price.ToString());
+            XmlText priceText = _xmlDocument.CreateTextNode(sweet.Price.ToString());
             priceElem.AppendChild(priceText);
 
-            flowerElem.AppendChild(priceElem);
+            sweetElem.AppendChild(priceElem);
 
-            xRoot.AppendChild(flowerElem);
+            xRoot.AppendChild(sweetElem);
             _xmlDocument.Save(_xmlFilePath);
         }
 
@@ -63,33 +64,33 @@ namespace Task1.Share
             }
         }
 
-        public Flower FindBy(string type)
+        public Sweet FindBy(string type)
         {
-            Flower flower = null;
+            Sweet sweet = null;
             var xRoot = _xmlDocument.DocumentElement;
             foreach (XmlNode xNode in xRoot)
             {
-                flower = GetFlower(xNode);
-                if (flower.Type.Equals(type))
+                sweet = GetSweet(xNode);
+                if (sweet.Type.Equals(type))
                 {
-                    return flower;
+                    return sweet;
                 }
             }
 
-            return flower;
+            return sweet;
         }
 
-        public List<Flower> GetAll()
+        public List<Sweet> GetAll()
         {
-            List<Flower> flowers = new List<Flower>();
+            List<Sweet> flowers = new List<Sweet>();
             var xRoot = _xmlDocument.DocumentElement;
             foreach (XmlNode xNode in xRoot)
             {
-                var flower = GetFlower(xNode);
-                flowers.Add(flower);
+                var sweet = GetSweet(xNode);
+                sweet.Add(sweet);
             }
 
-            return flowers;
+            return sweet;
         }
 
         public void Load(string xmlFilePath)
@@ -98,13 +99,13 @@ namespace Task1.Share
             _xmlDocument.Load(xmlFilePath);
         }
 
-        private Flower GetFlower(XmlNode xNode)
+        private Sweet GetSweet(XmlNode xNode)
         {
-            var flower = new Flower();
+            var sweet = new Sweet();
             if(xNode.Attributes.Count > 0)
             {
                 var attributeType = xNode.Attributes.GetNamedItem("Type");
-                flower.Type = attributeType?.Value;
+                sweet.Type = attributeType?.Value;
             }
             foreach (XmlNode childNode in xNode.ChildNodes)
             {
@@ -112,7 +113,7 @@ namespace Task1.Share
                 {
                     if (childNode.Name == "Price")
                     {
-                        flower.Price = double.Parse(childNode.InnerText);
+                        sweet.Price = double.Parse(childNode.InnerText);
                     }
                 }
                 catch (Exception ex) when (ex is FormatException || ex is NullReferenceException)
@@ -120,7 +121,7 @@ namespace Task1.Share
                     _logger.LogError(ex.Message, ex.StackTrace, nameof(childNode.InnerText));
                 }
             }
-            return flower;
+            return sweet;
         }
     }
 }

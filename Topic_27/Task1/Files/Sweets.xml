@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Sweets>
+  <Sweet Type="Choсolate">
+    <Price>3</Price>
+  </Sweet>
+  <Sweet Type="Candy">
+    <Price>2.22</Price>
+  </Sweet>
+  <Sweet Type="Apple candy">
+    <Price>2</Price>
+  </Sweet>
+  <Sweet Type="Bitter chocolate">
+    <Price>4</Price>
+  </Sweet>
+  <Sweet Type="Milk Chocolate">
+    <Price>3</Price>
+  </Sweet>
+  <Sweet Type="Orange candy">
+    <Price>1.1</Price>
+  </Sweet>
+</Sweets>
