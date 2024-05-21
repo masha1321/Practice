@@ -15,17 +15,9 @@
             <ColumnDefinition Width="212*"/>
         </Grid.ColumnDefinitions>
 
-        <ListBox x:Name="sweetListBox" Grid.Column="0" Margin="0,0,20,40" Grid.RowSpan="2" Grid.ColumnSpan="2" Grid.Row="1">
-            <StackPanel Height="152" Width="192">
-                <Label Content="Тип сладости:" Width="134"/>
-                <TextBox x:Name="typeTextBox" Width="186" ToolTip="Тип сладости"/>
-                <Label Content="Обертка:" Width="97"/>
-                <TextBox x:Name="wrapperTextBox" Width="186" ToolTip="Обертка"/>
-                <Label Content="Стоимость:" Width="108"/>
-                <TextBox x:Name="costTextBox" Width="186" ToolTip="Стоимость"/>
-            </StackPanel>
-            
-            <Button x:Name="addButton" Content="Добавить сладость" Click="AddSweet_Click"/>
+        <ListBox x:Name="sweetListBox" Margin="61,7,142,0" Grid.Row="3" Grid.Column="1">
+
+            <Button x:Name="addButton" Content="Добавить сладость" Click="AddSweet_Click" Height="53" Width="143"/>
         </ListBox>
 
         <StackPanel Grid.Row="1" Grid.Column="1" Margin="360,119,20,73" Grid.RowSpan="2" Grid.ColumnSpan="2">
@@ -38,6 +30,6 @@
         </StackPanel>
 
         <Button x:Name="loadXmlButton" Content="Открыть" Click="LoadXml_Click" Grid.Column="1" Margin="360,10,20,185" Grid.Row="1" Grid.ColumnSpan="2"/>
-        <Button Content="Выход" Click="ExitButton_Click" Grid.Column="2" Margin="53,125,53,22" Grid.Row="2"/>
+        <Button Content="Выход" Click="ExitButton_Click" Grid.Column="2" Margin="29,116,49,14" Grid.Row="2" Grid.RowSpan="2"/>
     </Grid>
 </Window>
