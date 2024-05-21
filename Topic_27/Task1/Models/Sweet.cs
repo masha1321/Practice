@@ -15,7 +15,5 @@ namespace Task1.Models
                 .AppendLine($"Price: {Price}")
                 .ToString();
         }
-
-       
     }
 }

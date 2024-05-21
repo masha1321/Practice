@@ -10,7 +10,7 @@ namespace Task1.Share
         private readonly XmlDocument _xmlDocument;
         private readonly ILogger _logger;
         private string _xmlFilePath;
-        private List<Sweet> sweet;
+        private List<Sweet> sweets;
 
         public XmlDocumentWorker(ILogger logger)
         {
@@ -82,15 +82,15 @@ namespace Task1.Share
 
         public List<Sweet> GetAll()
         {
-            List<Sweet> flowers = new List<Sweet>();
+            List<Sweet> sweets = new List<Sweet>();
             var xRoot = _xmlDocument.DocumentElement;
             foreach (XmlNode xNode in xRoot)
             {
                 var sweet = GetSweet(xNode);
-                sweet.Add(sweet);
+                sweets.Add(sweet);
             }
 
-            return sweet;
+            return sweets;
         }
 
         public void Load(string xmlFilePath)
