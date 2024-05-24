@@ -66,9 +66,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DBTur_firmDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="DBTur_firmDataSet1.cs">
-      <DependentUpon>DBTur_firmDataSet1.xsd</DependentUpon>
-    </Compile>
     <Compile Include="DBTur_firmDataSet1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -78,6 +75,29 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DBTur_firmDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DBTur_firmDataSet31.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBTur_firmDataSet31.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DBTur_firmDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBTur_firmDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DBTur_firmDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBTur_firmDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DBTur_firmDataSet6.cs">
+      <DependentUpon>DBTur_firmDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DBTur_firmDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBTur_firmDataSet6.xsd</DependentUpon>
     </Compile>
     <Compile Include="editTableForm.cs">
       <SubType>Form</SubType>
@@ -140,6 +160,50 @@
     </None>
     <None Include="DBTur_firmDataSet2.xss">
       <DependentUpon>DBTur_firmDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DBTur_firmDataSet31.xsc">
+      <DependentUpon>DBTur_firmDataSet31.xsd</DependentUpon>
+    </None>
+    <None Include="DBTur_firmDataSet31.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DBTur_firmDataSet31.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DBTur_firmDataSet31.xss">
+      <DependentUpon>DBTur_firmDataSet31.xsd</DependentUpon>
+    </None>
+    <None Include="DBTur_firmDataSet4.xsc">
+      <DependentUpon>DBTur_firmDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="DBTur_firmDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DBTur_firmDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DBTur_firmDataSet4.xss">
+      <DependentUpon>DBTur_firmDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="DBTur_firmDataSet5.xsc">
+      <DependentUpon>DBTur_firmDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="DBTur_firmDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DBTur_firmDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DBTur_firmDataSet5.xss">
+      <DependentUpon>DBTur_firmDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="DBTur_firmDataSet6.xsc">
+      <DependentUpon>DBTur_firmDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="DBTur_firmDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DBTur_firmDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DBTur_firmDataSet6.xss">
+      <DependentUpon>DBTur_firmDataSet6.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
